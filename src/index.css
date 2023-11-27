@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.google.com/specimen/Poppins');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Open sans';
+    src: url('https://fonts.google.com/specimen/Open+Sans');
+    font-weight: 400, 700;
+}
+body {
+    font-size: 18px;
+    @apply text-[18px] font-body font-normal text-grayish-blue
+}
+h4 {
+    @apply my-4 font-heading font-bold text-3xl text-very-dark-cyan
+}
+
+.card {
+    @apply rounded-md flex  items-center shadow-xl p-10;
+}
+
+.btn-primary{
+    @apply bg-pink rounded-full py-5 px-16 text-very-pale-cyan font-bold
+}
